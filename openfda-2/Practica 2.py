@@ -21,6 +21,8 @@ if respuesta1.status == 404:
 resultado = respuesta1.read().decode("utf-8")
 conexion.close()
 
+
+
 aspirina = json.loads(resultado)['results'][0]
 
 for numero in aspirina:
